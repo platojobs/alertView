@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="AlertTableView" customModule="APP_Text" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LlK-fS-GSD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="敌军三秒到达战场！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o4S-v1-quF">
+                                <rect key="frame" x="15" y="2" width="290" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="y5q-cW-a7B"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TnQ-RA-BlS">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <connections>
+                                    <action selector="sender:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="a3q-gt-hlW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="o4S-v1-quF" firstAttribute="centerY" secondItem="LlK-fS-GSD" secondAttribute="centerY" id="7MA-Ca-O5o"/>
+                            <constraint firstItem="o4S-v1-quF" firstAttribute="leading" secondItem="LlK-fS-GSD" secondAttribute="leading" constant="15" id="CFa-JU-WP8"/>
+                            <constraint firstAttribute="trailing" secondItem="o4S-v1-quF" secondAttribute="trailing" constant="15" id="F7p-X5-ZTK"/>
+                            <constraint firstItem="o4S-v1-quF" firstAttribute="centerX" secondItem="LlK-fS-GSD" secondAttribute="centerX" id="STg-nY-dHk"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="LlK-fS-GSD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="6FG-eM-Cpu"/>
+                    <constraint firstAttribute="trailing" secondItem="LlK-fS-GSD" secondAttribute="trailing" id="QWF-FI-T3r"/>
+                    <constraint firstItem="LlK-fS-GSD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ehw-Zj-OAI"/>
+                    <constraint firstAttribute="bottom" secondItem="LlK-fS-GSD" secondAttribute="bottom" id="oN4-6m-OyZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contexView" destination="LlK-fS-GSD" id="3uK-cK-nvL"/>
+                <outlet property="title" destination="o4S-v1-quF" id="xkZ-tG-Ind"/>
+            </connections>
+            <point key="canvasLocation" x="16.793893129770993" y="19.718309859154932"/>
+        </tableViewCell>
+    </objects>
+</document>
